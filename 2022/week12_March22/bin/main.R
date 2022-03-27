@@ -41,7 +41,7 @@ here::here()
 # Read data
 babynames <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-03-22/babynames.csv')
 # Save data
-readr::write_csv(babynames, file = here(year, week, "data", "babynames.csv")) #"/Users/ljiuser/Documents/Github/TidyTuesday/2022/week12_March22/data/babynames.csv")
+readr::write_csv(babynames, file = here(year, week, "data", "babynames.csv"))
 
 # Split dataset by sex
 females <- babynames %>% filter(sex == "F")
@@ -121,7 +121,6 @@ x_sum <- 18; y_sum <- 1500
 pdf(here(year, week, "results", "linePlot_top5_male_kevin.pdf"))
 p3 <- top_names_kevin_year_male %>% ggplot( aes(x=year, y=n, group=name, color=name)) +
     geom_line() +
-    # scale_fill_manual(values=c(John="#E7E7E7",William="#E7E7E7",James="#E7E7E7",Robert="#E7E7E7",Michael="#E7E7E7",Kevin="#F7451F"))
     labs(color='Top 5 names + Kevin') +
     ggtitle("Popularity of male names from 1880 to 2017") +
     ylab("Number of babies born") + xlab("Year") +
