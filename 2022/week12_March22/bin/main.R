@@ -33,7 +33,6 @@ set.seed(1234)
 year <- "2022"
 week <- "week12_March22"
 
-# ---------- Read data and save it
 setwd("/Users/ljiuser/Documents/Github/TidyTuesday/")
 here::here()
 
