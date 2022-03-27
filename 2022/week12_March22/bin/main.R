@@ -1,5 +1,5 @@
-############    -  Assessment on antigen specificity  -    ############
-############    --------   for the TCR data    --------    ############
+############     -    Tidy Tuestady Week 12    -     ############
+############    --------   Baby names    --------    ############
 
 # By Kevin Meza Landeros
 
@@ -7,8 +7,9 @@
 # Sub-version: 0
 
 ### -------------------------- Description -------------------------- ###
-#
-#
+# This code shows how to create figures based on a table that has the name
+# frequency of babys (males and females) borned from 1880 to 2017.
+# Plots generated: cloud words and line plots.
 
 cat('\n\n')
 ### --------------------------- Libraries --------------------------- ###
@@ -70,7 +71,7 @@ top_names_kevin_year_male <- males %>% filter(name %in% c(top_names_male, "Kevin
 top_names_kevin_year_male$name <- factor(top_names_kevin_year_male$name, levels = c(top_names_male, "Kevin"))
 
 
-# ---------- Plot
+# ---------- Plots
 
 # Most common names for males and females
 pdf(here(year, week, "results", "cloudWord_all_female.pdf"))
