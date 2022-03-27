@@ -8,7 +8,7 @@
 
 ### -------------------------- Description -------------------------- ###
 # This code shows how to create figures based on a table that has the name
-# frequency of babys (males and females) borned from 1880 to 2017.
+# frequency of babies (males and females) borned from 1880 to 2017.
 # Plots generated: cloud words and line plots.
 
 cat('\n\n')
